@@ -1,7 +1,6 @@
 <?php
     require_once '../voiture.php';
-    require_once'../components/head.php';
-    require_once'../components/script.php';
+    require_once '../components/head.php';
 ?>
 
 <h1>Spécifications Techniques</h1> 
@@ -62,3 +61,7 @@
         <button class="uk-button uk-button-default">Retour</button>
     </a>   
 </p>
+
+<?php
+    require_once '../components/script.php';
+?>

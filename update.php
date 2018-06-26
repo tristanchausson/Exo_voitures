@@ -1,7 +1,6 @@
 <?php
 	require_once 'voiture.php';
 	require 'components/head.php';
-    require 'components/script.php';
 ?>
 
 <!DOCTYPE html>
@@ -38,14 +37,12 @@
 		        				echo '</div>';
 							    echo '</fieldset>';
 		    					echo '<p uk-margin>';
-							    echo '<button class="uk-button uk-button-default" type="submit" name="modif" value="'.$modifier.'">Modifier</button>'; 
-							    echo '<a class="uk-button uk-button-default" type="button" href="../index.php">';
-							    echo '<button class="uk-button uk-button-default">Retour</button>';
-							    echo '</a>';   
+							    echo '<button class="uk-button uk-button-default" type="submit" name="modif" value="'.$modifier.'">Modifier</button>';  
 								echo '</p>';
 								echo '</form>';
 		                    }
 					    }
+    require 'components/script.php';
 					?>
 
     </body>

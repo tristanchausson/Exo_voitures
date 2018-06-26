@@ -1,7 +1,7 @@
 <?php
 	require_once 'bdd.php';
-    require'components/head.php';
-    require'components/script.php';
+    require 'components/head.php';
+    require 'components/script.php';
 
 class Voiture {
 	public static function ajout($modele, $puissance, $poids, $image, $vitesse, $accel, $conso, $marque, $type) {
@@ -11,6 +11,11 @@ class Voiture {
 
 	public static function affiche() {
 		$requete = Connexion::getLink()->query('SELECT *, voiture.id AS idVoiture, type.nom AS nomType, marque.nom AS marqueNom FROM voiture, marque, type WHERE voiture.marque = marque.id AND voiture.type = type.id ORDER BY idVoiture');
+		return $requete->fetchAll();
+	}
+
+	public static function afficheThree() {
+		$requete = Connexion::getLink()->query('SELECT *, voiture.id AS idVoiture, type.nom AS nomType, marque.nom AS marqueNom FROM voiture, marque, type WHERE voiture.marque = marque.id AND voiture.type = type.id ORDER BY date DESC LIMIT 3');
 		return $requete->fetchAll();
 	}
 

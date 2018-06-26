@@ -2,9 +2,15 @@
 	require_once 'voiture.php';
     require 'components/head.php';
 
-	$resultat = Voiture::affiche();
+	$resultat = Voiture::afficheThree();
 ?>
-	
+
+<h2>Derniers Ajouts</h2>
+
+<?php
+	require 'components/nav.php';
+?>
+
 <table class="uk-table uk-table-hover uk-table-divider">
     <thead>
         <tr>

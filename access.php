@@ -1,7 +1,7 @@
 <?php
 	require_once 'voiture.php';
-    require'components/head.php';
-    require'components/script.php';
+    require 'components/head.php';
+    require 'components/script.php';
 
 	if (isset($_POST['ajout'])) {
 		$modele    = $_POST['modele'];
