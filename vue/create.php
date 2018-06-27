@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-		<h1>Ajout Voitures</h1>
+		<h1 style="color: #c15555;">Ajout Voitures</h1>
 
 		<form class="uk-grid-small" uk-grid method="post" action="access.php">
 		    <div class="uk-width-1-1">
@@ -27,13 +27,13 @@
 		    <div class="uk-width-1-4@s">
 		        <input class="uk-input" type="text" name="image" placeholder="Image">
 		    </div>
-		    <div class="uk-width-1-2@s">
+		    <div class="uk-width-1-4@s">
 		        <input class="uk-input" type="text" name="vmax" placeholder="Vitesse max">
 		    </div>
 		    <div class="uk-width-1-4@s">
 		        <input class="uk-input" type="text" name="accel" placeholder="Acceleration">
 		    </div>
-		    <div class="uk-width-1-4@s">
+		    <div class="uk-width-1-2@s">
 		        <input class="uk-input" type="text" name="conso" placeholder="Consommation">
 		    </div>
 	        <div class="uk-width-1-2@s">
@@ -58,9 +58,9 @@
 					?>
 			    </select>
 			</div>
-		    <p uk-margin>
-		    	<button class="uk-button uk-button-default" type="submit" name="ajout">Enregister</button>
-	    	    <a class="uk-button uk-button-default" type="button" href="/index.php">Retour</a>
+		    <p uk-margin style="display: flex;margin: auto;margin-top: 2%;">
+		    	<button class="uk-button uk-button-default" type="submit" name="ajout" uk-icon="check" ratio="3" style="color: #c15555;border: none;"></button>
+	    	    <a class="uk-button uk-button-default" type="button" href="/index.php" uk-icon="home" ratio="3" style="color: #c15555;border: none;"></a>
 			</p>
 		</form>
 

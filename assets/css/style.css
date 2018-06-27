@@ -1,5 +1,4 @@
 body {
-    height: 400%;
     background-color: #d9dce0;
 }
 
@@ -10,10 +9,12 @@ h1 {
 
 h2 {
     text-align: center;
+    padding-top: 2%;
 }
 
 h3 {
     text-align: center;
+    padding-top: 2%;
 }
 
 p {
@@ -57,4 +58,5 @@ nav {
     margin: auto;
     display: flex;
 }
+
 
