@@ -1,10 +1,16 @@
 <?php
-	include_once 'class/voiture.php';
-    include_once 'components/head.php';
+	require_once '../class/voiture.php';
+    require '../components/head.php';
 
-	$resultat = Voiture::affiche();
+	$resultat = Voiture::afficheThree();
 ?>
-            
+
+<h2>Derniers Ajouts</h2>
+
+<?php
+	require '../components/nav.php';
+?>
+
 <!-- <div class="uk-child-width-1-3@s uk-grid-match" uk-grid> -->
 <div class="uk-child-width-1-3@m" uk-grid>
 
@@ -26,23 +32,18 @@
 		    echo '</div>';
 		    echo '</div>';
 			// echo '<div>';
-		    // echo '<div class="uk-card uk-card-default uk-card-hover uk-card-body">';
+    		// echo '<div class="uk-card uk-card-default uk-card-hover uk-card-body">';
 			// echo '<h3 class="uk-card-title">'.$data['marqueNom']." ".$data['modele'].'</h3>
 			// <img class="image" data-src="'.$data['image'].'" width="" height="" alt="" uk-img>';
-			// echo "<p>".$data['nomType']."</p>";
-			// echo '<p><a href="/vue/fiche.php?afficher='.$data['idVoiture'].'" uk-icon="icon: info"></a>';
-			// echo '<a href="/vue/update.php?modifier='.$data['idVoiture'].'" uk-icon="icon: file-edit"></a>';
-			// echo '<a href="/vue/access.php?supprimer='.$data['idVoiture'].'" uk-icon="icon: trash"></a>';
-			// echo '<p>';
 			// echo '</div>';
 			// echo '</div>';
 		}
 	?>
 
 </div>
+
 <!-- </div> -->
 
 <?php
-    include_once './components/script.php';
+    include '../components/script.php';
 ?>
-

@@ -1,9 +1,9 @@
 <?php
-    require_once '../voiture.php';
-    require_once '../components/head.php';
+    include_once '../class/voiture.php';
+    include_once '../components/head.php';
 ?>
 
-<h1>Spécifications Techniques</h1> 
+<h2>Spécifications Techniques</h2> 
 
 <?php
     if (isset($_GET['afficher'])) {
@@ -11,6 +11,7 @@
         $resultat = Voiture::afficheOne($afficher);
         foreach ($resultat as $data) {
             echo "<h3>Marque : ".$data['marqueNom']." / Modèle : ".$data['modele']."</h3>";
+            echo '<img class="image" data-src="'.$data['image'].'" width="" height="" alt="" uk-img>';
             echo '<div class="uk-child-width-1-5@m uk-grid-small uk-grid-match" uk-grid>';
             echo '<div>';
             echo '<div class="uk-card uk-card-secondary uk-card-body">';
@@ -43,8 +44,6 @@
             echo '</div>';
             echo '</div>';
             echo '</div>';
-            echo '<img src="'.$data['image'].'">';
-
 
             // echo '<li>Puissance : <b>'.$data['puissance'].' cv</b></li>';
             // echo '<li>Poids : <b>'.$data['poids'].' kg</b></li>';
@@ -57,11 +56,9 @@
 ?>
 
 <p uk-margin>
-    <a class="uk-button uk-button-default" type="button" href="../index.php">
-        <button class="uk-button uk-button-default">Retour</button>
-    </a>   
+    <a class="uk-button uk-button-default" type="button" href="/index.php">Retour</a>
 </p>
 
 <?php
-    require_once '../components/script.php';
+    include_once '../components/script.php';
 ?>
