@@ -18,9 +18,9 @@
 		    echo '<div class="uk-card-body">';
 		    echo '<h3 class="uk-card-title">'.$data['marqueNom']." ".$data['modele'].'</h3>';
 			echo "<p>".$data['nomType']."</p>";
-			echo '<p><a href="/vue/fiche.php?afficher='.$data['idVoiture'].'" uk-icon="icon: info"></a>';
-			echo '<a href="/vue/update.php?modifier='.$data['idVoiture'].'" uk-icon="icon: file-edit"></a>';
-			echo '<a href="/vue/access.php?supprimer='.$data['idVoiture'].'" uk-icon="icon: trash"></a>';
+			echo '<p><a href="/vue/fiche.php?afficher='.$data['idVoiture'].'" uk-icon="icon: info" ratio="2"></a>';
+			echo '<a href="/vue/update.php?modifier='.$data['idVoiture'].'" uk-icon="icon: file-edit" ratio="2"></a>';
+			echo '<a href="/vue/access.php?supprimer='.$data['idVoiture'].'" uk-icon="icon: trash" ratio="2"></a>';
 			echo '<p>';
 		    echo '</div>';
 		    echo '</div>';
